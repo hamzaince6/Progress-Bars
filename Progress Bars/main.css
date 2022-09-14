@@ -1,0 +1,36 @@
+
+/*
+  
+*/
+body {
+  background-color: #dbdbdb;
+  color: #4e4e4e;
+}
+/*======================================
+//--//-->   LOADER 
+======================================*/
+.Loading{
+	width:40px;
+	height:10px;
+	border-radius:25px;
+    text-align: center;
+    padding: 5px;
+}
+.Loading span{
+	position:absolute;
+	width:50px;
+	height:10px;
+	background-color: #0078ff;
+	border-radius:25px;
+    float: right;
+}
+.loader i{
+	color:black;
+	font-size:1em;
+    text-align: center;
+    width: 50px;
+    float: right;
+    margin-top: 10px;
+    
+}
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+                  
+                   <div class="html">
+                     <span>Başarınız</span> <span class="pull-right"></span>
+                   <div class="loader">	
+                        <i>0%</i>	
+                    <div class="Loading">
+                        <span data-charge='85'></span>
+                    </div>
+                </div>
+                <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+                <script type="text/javascript">		
+                    $(function(){
+
+                        $('.Loading span').animate({
+                            width : $('.Loading span').data('charge') + '%'
+                        },7900);
+
+                        var getCounter = parseInt($('.loader i').text());
+
+                        var MyCounter = setInterval(function(){
+                            if(getCounter !== 86){
+                                $('.loader i').text(getCounter++ + '%');
+                            }else{
+                                clearInterval(MyCounter);
+                                $('.loader i').text('85%');
+                            };
+
+                        },85);
+
+                    });
+                </script>
+                <br>
+                    </div>
+    
+    
+    
+</body>
+</html>
